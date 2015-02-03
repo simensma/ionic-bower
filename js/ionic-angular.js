@@ -10961,8 +10961,9 @@ function($timeout, $ionicGesture, $window) {
 
           if (getPrimaryScrollAxis(e) == 'x') {
             sideMenuCtrl._handleDrag(e);
-            e.gesture.srcEvent.preventDefault();
           }
+          e.gesture.srcEvent.preventDefault();
+
         }
 
         function onDragY(e) {
